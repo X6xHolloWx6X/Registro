@@ -15,7 +15,12 @@ form {
     background-color: rgba(255, 255, 255, 0.5);
     background-size: cover;
   }
-  
+.input.error {
+    border-color: #c14c9a;
+    color: #c14c9a;
+    box-shadow: 2px 2px 8px 1px #c14c9a;
+}
+  /*Porquería de los inputs (nombres, contraseñas, etc)*/
   .input {
     font-family: "Impact", sans-serif;
     max-width: 190px;
@@ -143,13 +148,55 @@ form {
       transform: translate(0);
     }
   }
-  
-  @media (min-width: 768px) {
-    .button-49,
-    .button-49:after {
-      width: 200px;
-      height: 86px;
-      line-height: 88px;
-    }
-  }
-  
+/* Estilos del modal */
+/* Estilos del modal al estilo cyberpunk */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8); /* Fondo oscuro semi-transparente */
+  z-index: 1;
+}
+
+.modal-content {
+  background-color: #1a1a1a; /* Fondo oscuro */
+  margin: 15% auto;
+  padding: 20px;
+  border: 2px solid #ff40ff; /* Borde neón */
+  width: 300px;
+  text-align: center;
+  position: relative;
+  user-select: none;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #ff40ff, 0 0 25px #ff40ff, 0 0 35px #ff40ff, 0 0 45px #ff00ff, 0 0 55px #ff00ff, 0 0 65px #ff00ff, 0 0 75px #ff00ff; /* Efecto glow/neón */
+  font-family: 'Orbitron', sans-serif; /* Fuente futurista */
+  color: #00ffff; /* Color de texto neón */
+}
+
+.close-btn {
+  color: #ff40ff; /* Color neón */
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  text-shadow: 0 0 10px #ff40ff, 0 0 20px #ff40ff, 0 0 30px #ff40ff; /* Efecto glow/neón */
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #ff00ff; /* Cambio de color al pasar el ratón */
+}
+
+/* Animación de entrada para el modal */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.modal {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}

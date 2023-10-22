@@ -1,26 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Documento</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form action="/registro" method="post">
-        <h2>Crea tu cuenta!</h2>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+        <h2>¡Crea tu cuenta!</h2>
         <img src="https://i.pinimg.com/originals/45/c2/c2/45c2c2b34634ca232cbb84689a9d51cd.png" width="100" height="100">
         <div class="inputs">
-            <input type="text" name="text" class="input" placeholder="Email" required="">
+            <input type="text" name="Email" class="input" placeholder="Email" required="">
             <br></br>
-            <input type="text" name="text" class="input" placeholder="Nombre de usuario" required="">
+            <input type="text" name="Usuario" class="input" placeholder="Nombre de usuario" required="">
             <br></br>
-            <input type="password" name="text" class="input" placeholder="Contraseña" required="">
+            <input type="password" name="Contraseña" class="input" placeholder="Contraseña" required="">
             <br></br>
-            <input type="password" name="text" class="input" placeholder="Confirmar Contraseña" required="">
+            <input type="password" name="ConfirmarContraseña" class="input" placeholder="Confirmar Contraseña" required="">
         </div>
         <br></br>    
         <button class="button-49" role="button">Registrarse</button>
     </form>
+    <div id="modalErrores" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <p id="textoErrores"></p>
+        </div>
+    </div>
+    <script src="js.js"></script>
 </body>
 </html>
