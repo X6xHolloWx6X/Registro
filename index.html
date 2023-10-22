@@ -8,10 +8,16 @@
 </head>
 <body>
     <form action="/registro" method="post">
-        <input type="text" name="email" placeholder="Correo electrónico">
-        <input type="text" name="username" placeholder="Nombre de usuario">
-        <input type="password" name="password" placeholder="Contraseña">
-        <input type="password" name="password" placeholder="Confirmar Contraseña">
+        <div class="inputs">
+            <input type="text" name="text" class="input" placeholder="Email" required="">
+            <br></br>
+            <input type="text" name="text" class="input" placeholder="Nombre de usuario" required="">
+            <br></br>
+            <input type="password" name="text" class="input" placeholder="Contraseña" required="">
+            <br></br>
+            <input type="password" name="text" class="input" placeholder="Confirmar Contraseña" required="">
+        </div>
+        <br></br>    
         <button class="button-49" role="button">Registrarse</button>
     </form>
 </body>
