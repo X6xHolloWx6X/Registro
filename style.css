@@ -12,7 +12,6 @@ form {
     text-align: center;
     box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
     background-image: url('https://w0.peakpx.com/wallpaper/383/979/HD-wallpaper-evangelion-adam-asuka-eva-genesis-ikari-missato-neon-rei-shinji.jpg'); /* URL de la imagen de fondo */
-    background-color: rgba(255, 255, 255, 0.5);
     background-size: cover;
   }
 
